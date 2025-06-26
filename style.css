@@ -54,18 +54,24 @@ body {
 /* Hero */
 .hero {
   background: #00bcd4;
+  position: relative;
   color: #fff;
-  padding: 5rem 0;
+  padding-left: 5rem;
+  padding-right: 5rem;
   text-align: center;
+  padding-bottom: 220px;
+  padding-top: 220px;
 }
+
 
 .hero p{
     padding-bottom: 30px;
 }
 
 .hero h2 {
-  font-size: 2.5rem;
+  font-size: 5.5rem;
   margin-bottom: 1rem;
+  line-height: 100px;
 }
 
 .hero .btn {
@@ -80,7 +86,8 @@ body {
 }
 
 /* About */
-.about, .pricing, .faq, .services {
+
+.about, .pricing, .faq{
   padding: 4rem 0;
   background: #fff;
 }
@@ -88,19 +95,54 @@ body {
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .about p {
-  max-width: 600px;
+  max-width: 350px;
   margin-top: 1rem;
 }
 
+.about ul {
+  color: white;
+  margin-left: 2.5rem;
+  margin-top: 4rem;
+  margin-bottom: 77px;
+  line-height: 2.1;
+  list-style: none;
+  background-color: #00bcd4;
+  padding-left: 0.5rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
 .personal-profile {
+    margin-top: 20px;
     border-radius: 10px;
     height: 300;
 }
 
+.btn-2 {
+  background: #111;;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  margin-left: 2.4rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* Service */
+.services{
+  padding-bottom: 80px;
+}
+
 .service-cards {  
   display: flex;
   gap: 2rem;
@@ -163,6 +205,7 @@ body {
 /* Responsive Design */
 
 @media (min-width: 900px) and (max-width: 1920px){
+  
     .service-cards{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -170,6 +213,14 @@ body {
         height: 100%;
     }
 }
+
+@media (max-width: 980px) and (min-width: 220px){
+  .about{
+    display: inline-block;
+    border-bottom-left-radius: 0%;
+    
+  }
+} 
 
 @media (max-width: 768px) {
   .navbar .container {
