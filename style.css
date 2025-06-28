@@ -53,7 +53,7 @@ body {
 
 /* Hero */
 .hero {
-  background: #00bcd4;
+  background: linear-gradient(to right, #007BFF, #00FFFF); 
   position: relative;
   color: #fff;
   padding-left: 5rem;
